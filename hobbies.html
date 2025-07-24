@@ -1,0 +1,65 @@
+<!-- hobbies.html  -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mis Hobbies - Kendaly</title>
+  <link rel="stylesheet" href="estilo/estilo.css" />
+</head>
+<body>
+  <nav class="menu-flotante">
+    <a href="index.html">Inicio</a>
+    <a href="intereses.html">Intereses</a>
+    <a href="habilidades.html">Habilidades</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main class="galeria">
+    <h2 class="titulo-centrado">Mis Hobbies</h2>
+    <div class="galeria-contenido">
+      <div><img src="imgenes/jugar-hobby.jpeg" alt="Videojuegos"><p>Videojuegos</p></div>
+      <div><img src="imgenes/arte-hobbie.jpeg" alt="Pintura creativa"><p>Pintar cuadros</p></div>
+      <div><img src="imgenes/musica-hobby.jpeg" alt="Música relajante"><p>Escuchar música</p></div>
+      <div><img src="imgenes/dormir-hobby.jpeg" alt="Descanso saludable"><p>Dormir</p></div>
+      <div><img src="imgenes/anime-hobby.jpeg" alt="Series de anime"><p>Ver anime</p></div>
+    </div>
+
+    <section style="text-align: center; margin-top: 30px;">
+      <button onclick="mostrarFraseHobbie()" style="background-color: #f48fb1; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 1em;">
+        💡 Inspiración del día
+      </button>
+      <p id="fraseHobbie" style="text-align: center; font-style: italic; color: #8b2e69; margin-top: 10px;"></p>
+    </section>
+  </main>
+
+  <footer class="footer-info">
+    <p>Kendaly Hub | Estudiante de Informática | Julio 2025</p>
+    <div class="iconos-redes">
+      <a href="https://facebook.com" target="_blank"><img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+      <a href="https://tiktok.com" target="_blank"><img src="https://img.icons8.com/color/48/tiktok--v1.png" alt="TikTok"></a>
+      <a href="https://twitter.com" target="_blank"><img src="https://img.icons8.com/color/48/twitter--v1.png" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <script>
+    function mostrarFraseHobbie() {
+      const frases = [
+        "🎮 Disfrutar también es parte del éxito.",
+        "🎨 Un hobbie te conecta con tu esencia.",
+        "🎵 Relajarte te renueva el alma.",
+        "🌙 Tus pasatiempos reflejan quién eres."
+      ];
+      const frase = frases[Math.floor(Math.random() * frases.length)];
+      document.getElementById("fraseHobbie").textContent = frase;
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+

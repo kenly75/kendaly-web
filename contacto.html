@@ -1,0 +1,74 @@
+<!-- contacto.html  -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contáctame - Kendaly Hub</title>
+  <link rel="stylesheet" href="estilo/estilo.css" />
+</head>
+<body>
+  <nav class="menu-flotante">
+    <a href="index.html">Inicio</a>
+    <a href="intereses.html">Intereses</a>
+    <a href="habilidades.html">Habilidades</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main id="contacto">
+    <h2 class="titulo-centrado">Contáctame</h2>
+    <div class="formulario-contacto">
+      <form>
+  <label for="nombre">Nombre completo</label><br />
+  <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+  <label for="correo">Correo electrónico</label><br />
+  <input type="email" id="correo" name="correo" required /><br /><br />
+
+  <label for="mensaje">Mensaje</label><br />
+  <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br /><br />
+
+  <button type="submit">Enviar</button>
+</form>
+
+    </div>
+
+    <section style="text-align: center; margin-top: 30px;">
+      <button onclick="mostrarFraseContacto()" style="background-color: #f48fb1; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 1em;">
+        💡 Inspiración del día
+      </button>
+      <p id="fraseContacto" style="text-align: center; font-style: italic; color: #8b2e69; margin-top: 10px;"></p>
+    </section>
+  </main>
+
+  <footer class="footer-info">
+    <p>Kendaly Hub | Estudiante de Informática | Julio 2025</p>
+    <div class="iconos-redes">
+      <a href="https://facebook.com" target="_blank"><img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+      <a href="https://tiktok.com" target="_blank"><img src="https://img.icons8.com/color/48/tiktok--v1.png" alt="TikTok"></a>
+      <a href="https://twitter.com" target="_blank"><img src="https://img.icons8.com/color/48/twitter--v1.png" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <script>
+    function mostrarFraseContacto() {
+      const frases = [
+        "📬 A veces un mensaje cambia un día.",
+        "📝 Expresar es comenzar a sanar.",
+        "💬 Lo importante es comunicarse con el corazón.",
+        "💌 Tus palabras importan."
+      ];
+      const frase = frases[Math.floor(Math.random() * frases.length)];
+      document.getElementById("fraseContacto").textContent = frase;
+    }
+  </script>
+  <script src="scripts/elementos.js"></script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fef6fa;
+  color: #333;
+}
+
+.logo-header {
+  text-align: center;
+  background-color: #ffd6ec;
+  padding: 20px;
+}
+
+.logo {
+  margin: 0;
+  color: #8b008b;
+  font-size: 2em;
+}
+
+.foto {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 6px solid #fa9cc9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Navegación */
+.menu-flotante {
+  position: sticky;
+  top: 0;
+  background-color: #ffc0cb;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-flotante a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.menu-flotante a:hover {
+  background-color: #ff8dc7;
+}
+
+/* Secciones */
+section {
+  padding: 20px;
+}
+
+.titulo-centrado {
+  text-align: center;
+  color: #8b008b;
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #ffc0cb;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Galerías */
+.galeria {
+  text-align: center;
+}
+
+.galeria-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+}
+
+.galeria-contenido div {
+  width: 200px;
+  background-color: #ffe4f0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.galeria-contenido img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.galeria-contenido img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.galeria-contenido p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #5f005f;
+}
+
+/* Video favorito */
+.video-favorito {
+  text-align: center;
+  color: #8b008b;
+  font-size: 1.4em;
+}
+
+.img-video {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.img-video:hover {
+  transform: scale(1.05);
+}
+
+/* Formulario */
+#contacto form {
+  background-color: #ffe8f0;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(200, 100, 150, 0.2);
+}
+
+#contacto input,
+#contacto textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #f7a7c0;
+  border-radius: 5px;
+}
+
+#contacto button {
+  background-color: #f368b5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contacto button:hover {
+  background-color: #e0529d;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #ffd6ec;
+  color: #444;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .logo-header {
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .foto {
+    width: 120px;
+    height: 120px;
+  }
+
+  .galeria-contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria-contenido div {
+    width: 80%;
+  }
+
+  .img-video {
+    width: 90%;
+  }
+
+  #contacto form {
+    width: 90%;
+  }
+
+  .menu-flotante {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .menu-flotante a {
+    font-size: 0.9em;
+    padding: 6px 10px;
+  }
+
+  .titulo-centrado {
+    font-size: 1.5em;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
+
+
+
+
+
+

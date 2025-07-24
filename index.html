@@ -1,0 +1,89 @@
+<!-- index.html mejorado con frases de inspiración, centrado y footer con apps sociales -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Profesional de Kendaly Hub</title>
+  <link rel="stylesheet" href="estilo/estilo.css" />
+  <link rel="shortcut icon" href="img/icono.png" type="image/x-icon" />
+</head>
+<body>
+  <nav class="menu-flotante">
+    <a href="index.html">Inicio</a>
+    <a href="intereses.html">Intereses</a>
+    <a href="habilidades.html">Habilidades</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <header class="logo-header">
+    <h1 class="logo">✨ Kendaly Lizeth Hub Tiul ✨</h1>
+    <img src="imgenes/mi-perfil.jpg" class="foto" alt="Foto de perfil Kendaly">
+  </header>
+
+  <main>
+    <section class="resumen" style="text-align: center;">
+      <h2 class="titulo-centrado">Sobre Mí</h2>
+      <p>Soy una persona creativa, apasionada por el diseño gráfico, la tecnología, los idiomas y las experiencias nuevas.</p>
+      <p>Me encanta descubrir el mundo a través del arte, la programación, la lectura y los viajes.</p>
+      <p>Esta página es una ventana a lo que soy y a lo que me inspira.</p>
+    </section>
+
+    <section class="video-favorito">
+      <h2 class="titulo-centrado">Mi video favorito</h2>
+      <p>Haz clic en la imagen para ver el video:</p>
+      <a href="https://youtu.be/DCYmJDO2_IE?si=9iaVljAzeEsSb4G7" target="_blank">
+        <img src="imgenes/lana-delrey.jpeg" class="img-video" alt="Video favorito">
+      </a>
+    </section>
+
+    <section style="text-align: center; margin-top: 30px;">
+      <button onclick="mostrarFraseInicio()" style="background-color: #f48fb1; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 1em;">
+        💡 Inspiración del día
+      </button>
+      <p id="fraseInicio" style="text-align: center; font-style: italic; color: #8b2e69; margin-top: 10px;"></p>
+    </section>
+
+    <section style="text-align: center; margin-top: 40px;">
+      <button onclick="cambiarColor()" style="background-color: #f48fb1; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 1em;">
+        🌈 Cambiar fondo
+      </button>
+    </section>
+  </main>
+
+  <footer class="footer-info">
+    <p>Kendaly Hub | Estudiante de Informática | Julio 2025</p>
+    <div class="iconos-redes">
+      <a href="https://facebook.com" target="_blank"><img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+      <a href="https://tiktok.com" target="_blank"><img src="https://img.icons8.com/color/48/tiktok--v1.png" alt="TikTok"></a>
+      <a href="https://twitter.com" target="_blank"><img src="https://img.icons8.com/color/48/twitter--v1.png" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <script>
+    function mostrarFraseInicio() {
+      const frases = [
+        "🌟 Cree en ti misma cada día.",
+        "💖 Tu autenticidad es tu poder.",
+        "🌈 Pequeños pasos también te llevan lejos.",
+        "✨ Rodéate de lo que te inspire."
+      ];
+      const frase = frases[Math.floor(Math.random() * frases.length)];
+      document.getElementById("fraseInicio").textContent = frase;
+    }
+  </script>
+  <script src="scripts/elementos.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
